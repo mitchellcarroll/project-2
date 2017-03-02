@@ -1,4 +1,6 @@
-<h2><%= @expense.category %> <%= @expense.value %> <%= link_to "(edit)", edit_expense_path(@expense) %></h2>
-<%= form_for @expense, method: :delete do |f| %>
+<div class = "show_expense"
+  <h2><%= @expense.category %> <%= @expense.value %> <%= link_to "(edit)", edit_expense_path(@expense) %></h2>
+  <%= form_for @expense, method: :delete do |f| %>
   <%= f.submit "Delete", class: "delete" %>
-<% end %>
+  <% end %>
+</div>

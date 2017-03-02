@@ -3,29 +3,10 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Deploy this repository down from git hub to have access to the source code. (https://github.com/mitchellcarroll/project-2)
 
-* Ruby version
+The url to this application is: https://obscure-beyond-12569.herokuapp.com/dashboard
 
-* System dependencies
+a short video explanation of this project can be found at :
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-<!-- <% if !current_user %>
-<style>
-body {background-image: url("http://i.imgur.com/Rn0qJw1.jpg");}
-    </style>
-    <%end%> -->
+This project was complete as apart of WDI14 at General Assembly DC.
