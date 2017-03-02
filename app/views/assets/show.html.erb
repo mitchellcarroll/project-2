@@ -1,0 +1,4 @@
+<h2><%= @asset.category %> <%= @asset.value %> <%= link_to "(edit)", edit_asset_path(@asset) %></h2>
+<%= form_for @asset, method: :delete do |f| %>
+  <%= f.submit "Delete", class: "delete" %>
+<% end %>

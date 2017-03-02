@@ -1,0 +1,15 @@
+<h2>Edit Asset</h2>
+
+<%= form_for @asset, method: :put do |f| %>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+
+  <%= f.label :value %>
+  <%= f.text_field :value %>
+
+  <%= f.submit %>
+  <% end %>
+  
+  <%= form_for @asset, method: :delete do |f| %>
+  <%= f.submit "Delete", class: "delete" %>
+<% end %>

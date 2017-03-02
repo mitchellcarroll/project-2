@@ -1,0 +1,9 @@
+<div class = "assets_list">
+  <h2>Assets <%= link_to "(+)", new_asset_path %></h2>
+    <% @assets.each do |asset| %>
+      <li>
+        <%= link_to asset.category, asset %>
+        <%= number_to_currency(asset.value) %>
+        </li>
+      <% end %>
+  </div>

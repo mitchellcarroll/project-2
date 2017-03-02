@@ -1,0 +1,16 @@
+<div class= "new_expense">
+
+<h2>New Expense <%= link_to "(+)", new_expense_path %></h2>
+
+  <%= form_for @expense do |f| %>
+
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+
+  <%= f.label :value %>
+  <%= f.text_field :value %>
+
+  <%= f.submit %>
+<% end %>
+
+</end>
