@@ -3,6 +3,9 @@
       <% @assets.each do |asset| %>
         <li>
           <%= link_to asset.category, asset %>
+          <%# While rails will adapt it for you typically, it is better to more
+          specifically define the path that link_to uses. Example:
+          link_to asset.category, asset_path(asset) %>
           <%= number_to_currency(asset.value) %>
         </li>
       <% end %>

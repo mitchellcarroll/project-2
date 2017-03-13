@@ -39,6 +39,7 @@ class AssetsController < ApplicationController
 
   private
   def asset_params
-    params.require(:asset).permit(:id, :category, :value)
+    params.require(:asset).permit(:category, :value)
+    # You don't need to list :id on .permit. It only limits what can come in as form data.
   end
 end
