@@ -2,6 +2,11 @@ class ExpensesController < ApplicationController
 
   def index
     @expenses = Expense.all
+    # This current code will show every user the same expenses and assets. If you
+    # wanted to show each user accounts specific to them, you would have to query
+    # for associations based on current_user. Same for the other controller actions.
+    #
+    # @expenses = current_user.expenses
   end
 
   def show
@@ -40,7 +45,7 @@ class ExpensesController < ApplicationController
 
   private
   def expense_params
-    params.require(:expense).permit(:id, :category, :value)
+    params.require(:expense).permit(:category, :value)
   end
 
 end

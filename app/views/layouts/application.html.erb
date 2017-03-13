@@ -7,7 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'http://i.imgur.com/9LMGF81.png' %>
-
+    <%# Nice touch using a favicon %>
   </head>
 
   <body>
@@ -31,6 +31,7 @@
                 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
               <% end %>
             </li>
+            <%# Really well formatted and dynamic navigation menu %>
           </ul>
         </div>
       </div>
@@ -38,6 +39,8 @@
       <div id="balance">
       <!-- Total Assets <%= number_to_currency(@total_assets) %>
       Total Expenses <%= number_to_currency(@total_expenses) %> -->
+      <%# Be careful commenting out ERB like above, it can cause errors. The best way
+      to comment out ERB code is like this. %>
       <h2>Balance <%= number_to_currency(@net_total) %>
     </h2>
       <% end %>

@@ -9,6 +9,9 @@ class DashboardController < ApplicationController
     @asset = Asset.new
     @expense = Expense.new
   end
+  # I don't think new is being used here. The links to add new assets and expenses
+  # from the main dashboard view go to expenses#new and assets#new. If unused, you
+  # can delete it. Same with create.
 
   def create
     @asset = Asset.new(asset_params.merge(user: current_user))

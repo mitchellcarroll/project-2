@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 root to: "dashboard#index"
-
+# Good use here of root and custom routes. Only question is why the app
+# needs both /home and /dashboard to route to dashboard#index?
 get '/dashboard', to: 'dashboard#index'
 get '/home', to: 'dashboard#index'
 get '/assets', to: 'assets#index'
@@ -10,6 +11,7 @@ get '/expenses', to: 'expenses#index'
   resources :assets
   resources :expenses
 end
+
 
 # Prefix Verb   URI Pattern                    Controller#Action
 # new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
